@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Language Chatbot</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="app-container">
+
+    <!-- LEFT : CHAT -->
+    <div class="chat-container">
+        <div class="chat-header">
+            <span>🤖 Sign Language Chatbot</span>
+            <button id="clearBtn" class="clear-only">Clear</button>
+        </div>
+
+        <div id="chat-box"></div>
+
+        <div class="input-area">
+            <input type="text" id="user-input" placeholder="Type your message..." />
+            <button id="sendBtn">Send</button>
+        </div>
+    </div>
+
+    <!-- RIGHT : AVATAR / VIDEO -->
+<div class="video-container">
+    <div class="video-header">
+        🧍 Sign Avatar
+        <button id="replayBtn" class="replay-btn">Replay</button>
+    </div>
+
+    <div class="video-box">
+        <video id="signVideo" width="100%" muted playsinline></video>
+    </div>
+</div>
+
+
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>
