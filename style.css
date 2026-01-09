@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: radial-gradient(circle at top, #1e1e1e, #000);
+    height: 100vh;
+    color: white;
+}
+
+/* MAIN SPLIT SCREEN */
+.app-container {
+    display: flex;
+    height: 100vh;
+}
+
+/* ---------------- LEFT CHAT ---------------- */
+
+.chat-container {
+    width: 420px;
+    background: #111;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #2a2a2a;
+}
+
+.chat-header {
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #181818;
+    border-bottom: 1px solid #2a2a2a;
+}
+
+.clear-only {
+    background: #29b6f6;
+    color: #000;
+    border: none;
+    border-radius: 8px;
+    padding: 6px 12px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.clear-only:hover {
+    background: #4fc3f7;
+}
+
+
+#chat-box {
+    flex: 1;
+    padding: 12px;
+    overflow-y: auto;
+}
+
+.message {
+    max-width: 75%;
+    padding: 10px 12px;
+    margin: 8px 0;
+    border-radius: 12px;
+    font-size: 14px;
+}
+
+.user {
+    background: #1e88e5;
+    margin-left: auto;
+}
+
+.bot {
+    background: #2e7d32;
+    margin-right: auto;
+}
+
+.time {
+    font-size: 10px;
+    opacity: 0.6;
+    margin-top: 4px;
+}
+
+/* INPUT */
+.input-area {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #2a2a2a;
+}
+
+.input-area input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+
+.input-area button {
+    margin-left: 8px;
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: none;
+    background: #1e88e5;
+    color: white;
+    cursor: pointer;
+}
+
+/* ---------------- RIGHT VIDEO ---------------- */
+
+.video-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background: #0d0d0d;
+}
+
+.video-header {
+    padding: 12px;
+    border-bottom: 1px solid #2a2a2a;
+    text-align: center;
+    font-weight: 600;
+}
+
+.video-box {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #777;
+    font-size: 16px;
+}
+
+.replay-btn {
+    margin-left: 12px;
+    padding: 6px 12px;
+    border-radius: 8px;
+    border: none;
+    background: #4caf50;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.replay-btn:hover {
+    background: #66bb6a;
+}
+
+/* Smooth video fade */
+#signVideo {
+    opacity: 1;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.fade-out {
+    opacity: 0;
+}
+
+.fade-in {
+    opacity: 1;
+}
